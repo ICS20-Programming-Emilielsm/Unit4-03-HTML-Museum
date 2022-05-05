@@ -18,8 +18,10 @@ function displayCost() {
 	let select = document.getElementById('day');
 	let day = select.options[select.selectedIndex].value;
   
-    	
-	if (age < 5 || age > 95) {
+  if (age <= 0) {
+		cost = "Enter Valid Age"
+	}
+	else if (age < 5 || age > 95) {
 		cost = "The cost is FREE for you."
 	}
 	else if ((day == "Tuesday") || (day == "Thursday)") 
