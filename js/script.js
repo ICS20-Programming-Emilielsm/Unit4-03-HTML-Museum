@@ -17,7 +17,8 @@ function displayCost() {
 	let age = parseInt(document.getElementById('age').value)	
 	let select = document.getElementById('day');
 	let day = select.options[select.selectedIndex].value;
-  
+
+  //find out price
   if (age <= 0) {
 		cost = "Enter Valid Age"
 	}
